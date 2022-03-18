@@ -11,13 +11,15 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\engine\Application.h" />
-    <ClInclude Include="src\engine\Core.h" />
-    <ClInclude Include="src\engine\EntryPoint.h" />
+    <ClInclude Include="src\engine\log\Log.h" />
+    <ClInclude Include="src\engine\app\Application.h" />
+    <ClInclude Include="src\engine\dllDefine.h" />
+    <ClInclude Include="src\engine\app\EntryPoint.h" />
     <ClInclude Include="src\ge.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\engine\Application.cpp" />
+    <ClCompile Include="src\engine\log\Log.cpp" />
+    <ClCompile Include="src\engine\app\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -68,6 +70,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>GE_PLATFORM_WINDOWS;GE_BUILD_DLL;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);GE_PLATFORM_WINDOWS;GE_PLATFORM_WINDOWS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)gengine\module\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -82,6 +85,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>GE_PLATFORM_WINDOWS;GE_BUILD_DLL;NDEBUG;_CONSOLE;%(PreprocessorDefinitions);GE_PLATFORM_WINDOWS;GE_PLATFORM_WINDOWS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)gengine\module\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

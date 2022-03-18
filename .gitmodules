@@ -1,0 +1,3 @@
+[submodule "gengine/module/spdlog"]
+	path = gengine/module/spdlog
+	url = https://github.com/gabime/spdlog

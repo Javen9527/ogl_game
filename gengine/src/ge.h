@@ -2,7 +2,9 @@
 
 
 // applications
-#include "engine/Application.h"
+#include "engine/app/Application.h"
+#include "engine/app/EntryPoint.h"
 
-// entry point
-#include "engine/EntryPoint.h"
+
+// log
+#include "engine/log/Log.h"

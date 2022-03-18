@@ -1,5 +1,9 @@
 #pragma once
+
 #include <cstdio>
+
+#include "Application.h"
+#include "../log/Log.h"
 
 #ifdef GE_PLATFORM_WINDOWS
 
@@ -8,7 +12,9 @@ extern ge::Application* ge::CreateApplication();
 
 int main(int argc, char** argv)
 {
-	printf("ge start!\n");
+	ge::Log::init();
+
+	GE_WARN("GE Initialzied!");
 
 	auto app = ge::CreateApplication();
 	app->Run();

@@ -15,12 +15,13 @@ opengl for a game.
 
 1. skip
 2. skip
-3. 配置文件
+3. skip
+4. 配置文件
     - 删除debug中除了x64之外的版本；
     - 设定gengine输出为dll
     - 设定全局属性：
-        - 输出目录：$(SolutionDir)bin\$(Configurations)-$(Platform)\$(ProjectName)\
-        - 中间目录：$(SolutionDir)tmp\$(Configurations)-$(Platform)\$(ProjectName)\
+        - 输出目录：`$(SolutionDir)bin\$(Configuration)-$(Platform)\$(ProjectName)\`
+        - 中间目录：`$(SolutionDir)tmp\$(Configuration)-$(Platform)\$(ProjectName)\`
     - 添加一个新项目-应用项目（都被sln管理）：
         - 同样删除x64之外的版本
         - 同样设定全局属性
@@ -40,8 +41,8 @@ opengl for a game.
             print();
         }
         ```
-4. entrypoint
-    - core.h: 解决dll export 和 import的问题
+5. entrypoint
+    - dllDefine.h: 解决dll export 和 import的问题
         ```c++
         #ifdef GE_PLATFORM_WINDOWS // 定义使用的平台
             #ifdef GE_BUILD_DLL // 在ge中定义，而在sandbox中不要定义
@@ -61,4 +62,9 @@ opengl for a game.
     - EntryPoint.h: main函数应该被ge管理，因为资源和内存管理属于engine的工作
         * 通过extern关键字可以保证无需提前知道类型
         * 在SandBox中只需要客户继承Application和实现CreateApplication即可
+
+6. log
+    - 通过git管理vendor的module
+        * git submodule add link path
+        * 再将路径添加到包含路径中即可
 
