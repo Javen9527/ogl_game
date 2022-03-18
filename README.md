@@ -16,7 +16,7 @@ opengl for a game.
 1. skip
 2. skip
 3. skip
-4. 配置文件
+4. 创建解决方案-默认会创建一个项目-配置该项目
     - 删除debug中除了x64之外的版本；
     - 设定gengine输出为dll
     - 设定全局属性：

@@ -3,17 +3,17 @@
 #include <cstdio>
 
 #include "Application.h"
-#include "../log/Log.h"
+#include "engine/log/Log.h"
 
 #ifdef GE_PLATFORM_WINDOWS
 
 // implement by client
 extern ge::Application* ge::CreateApplication();
 
+// entry point 
 int main(int argc, char** argv)
 {
 	ge::Log::init();
-
 	GE_WARN("GE Initialzied!");
 
 	auto app = ge::CreateApplication();
@@ -21,6 +21,5 @@ int main(int argc, char** argv)
 
 	delete app;
 }
-
 
 #endif

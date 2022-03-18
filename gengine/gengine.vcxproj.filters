@@ -15,19 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\engine\app\Application.h">
+    <ClInclude Include="include\engine\app\Application.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="src\engine\dllDefine.h">
+    <ClInclude Include="include\dllDefine.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="src\ge.h">
+    <ClInclude Include="include\ge.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="src\engine\app\EntryPoint.h">
+    <ClInclude Include="include\engine\app\EntryPoint.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="src\engine\log\Log.h">
+    <ClInclude Include="include\engine\log\Log.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

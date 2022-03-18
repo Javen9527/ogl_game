@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../dllDefine.h"
+#include "dllDefine.h"
 
 namespace ge
 {

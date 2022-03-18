@@ -1,8 +1,6 @@
 #pragma once
 
-
 // micro define
-
 
 #ifdef GE_PLATFORM_WINDOWS
 

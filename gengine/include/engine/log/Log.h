@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../dllDefine.h"
+#include "dllDefine.h"
 
 #include "spdlog/spdlog.h"
 
@@ -32,9 +32,9 @@ namespace ge
 #define GE_TRACE(...) ::ge::Log::GetEngineLogger()->trace(__VA_ARGS__)
 
 // engine log
-#define CL_FATAL(...) ::ge::Log::GetClientLogger()->fatal(__VA_ARGS__)
-#define CL_ERROR(...) ::ge::Log::GetClientLogger()->error(__VA_ARGS__)
-#define CL_WARN(...) ::ge::Log::GetClientLogger()->warn(__VA_ARGS__)
-#define CL_INFO(...) ::ge::Log::GetClientLogger()->info(__VA_ARGS__)
-#define CL_TRACE(...) ::ge::Log::GetClientLogger()->trace(__VA_ARGS__)
+#define APP_FATAL(...) ::ge::Log::GetClientLogger()->fatal(__VA_ARGS__)
+#define APP_ERROR(...) ::ge::Log::GetClientLogger()->error(__VA_ARGS__)
+#define APP_WARN(...) ::ge::Log::GetClientLogger()->warn(__VA_ARGS__)
+#define APP_INFO(...) ::ge::Log::GetClientLogger()->info(__VA_ARGS__)
+#define APP_TRACE(...) ::ge::Log::GetClientLogger()->trace(__VA_ARGS__)
 
