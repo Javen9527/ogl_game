@@ -76,6 +76,10 @@ opengl for a game.
     - 属性- 选择 预编译头文件
     - 可以将代码中非相关的头文件（如memeory、stl等）的包含省略
 
-11. Windows
+11. Windows and GLFW
+    - 第三方库需要编译的（即需要一个sln）构建lib进行链接的方法
+        - 使用premake之类的工具
+        - 使用库本身的cmake创建出该库本身的sln，再拷贝其中的projct项目文件，添加到自己项目中，修改头文件输出文件等，再添加引用即可。
+
 
 
