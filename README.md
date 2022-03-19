@@ -68,3 +68,14 @@ opengl for a game.
         * git submodule add link path
         * 再将路径添加到包含路径中即可
 
+7. skip-premake
+
+8. /9 Event system
+
+10. pch: pre-compiled headers
+    - 属性- 选择 预编译头文件
+    - 可以将代码中非相关的头文件（如memeory、stl等）的包含省略
+
+11. Windows
+
+

@@ -11,6 +11,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\engine\events\AppEvent.h" />
+    <ClInclude Include="include\engine\events\Event.h" />
+    <ClInclude Include="include\engine\events\KeyEvent.h" />
+    <ClInclude Include="include\engine\events\MouseEvent.h" />
     <ClInclude Include="include\engine\log\Log.h" />
     <ClInclude Include="include\engine\app\Application.h" />
     <ClInclude Include="include\dllDefine.h" />

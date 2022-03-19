@@ -1,6 +1,7 @@
 #pragma once
 
 #include "dllDefine.h"
+#include "engine/events/Event.h"
 
 namespace ge
 {

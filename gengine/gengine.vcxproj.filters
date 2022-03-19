@@ -30,6 +30,18 @@
     <ClInclude Include="include\engine\log\Log.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="include\engine\events\Event.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\engine\events\KeyEvent.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\engine\events\AppEvent.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\engine\events\MouseEvent.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\engine\app\Application.cpp">
