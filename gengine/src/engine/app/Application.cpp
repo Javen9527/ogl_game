@@ -6,7 +6,7 @@ namespace ge
 {
 	Application::Application()
 	{
-
+		m_window = std::unique_ptr<Window>(Window::Create());
 	}
 
 	Application::~Application()
@@ -16,11 +16,10 @@ namespace ge
 
 	void Application::Run()
 	{
-		WindowResizeEvent e(1200, 720);
-		GE_TRACE(e);
 
-		while (true)
+		while (m_running)
 		{
+			m_window->OnUpdate();
 		}
 	}
 

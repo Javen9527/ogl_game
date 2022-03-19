@@ -1,6 +1,6 @@
 #pragma once
 
-#include "dllDefine.h"
+#include "define.h"
 
 #include "spdlog/spdlog.h"
 #include "spdlog/fmt/ostr.h"
@@ -26,6 +26,7 @@ namespace ge
 } // namespace ge
 
 // engine log
+#define GE_CRITICAL(...) ::ge::Log::GetEngineLogger()->critical(__VA_ARGS__)
 #define GE_FATAL(...) ::ge::Log::GetEngineLogger()->fatal(__VA_ARGS__)
 #define GE_ERROR(...) ::ge::Log::GetEngineLogger()->error(__VA_ARGS__)
 #define GE_WARN(...) ::ge::Log::GetEngineLogger()->warn(__VA_ARGS__)
@@ -33,6 +34,7 @@ namespace ge
 #define GE_TRACE(...) ::ge::Log::GetEngineLogger()->trace(__VA_ARGS__)
 
 // engine log
+#define APP_CRITICAL(...) ::ge::Log::GetClientLogger()->critical(__VA_ARGS__)
 #define APP_FATAL(...) ::ge::Log::GetClientLogger()->fatal(__VA_ARGS__)
 #define APP_ERROR(...) ::ge::Log::GetClientLogger()->error(__VA_ARGS__)
 #define APP_WARN(...) ::ge::Log::GetClientLogger()->warn(__VA_ARGS__)

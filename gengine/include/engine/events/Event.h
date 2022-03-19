@@ -1,6 +1,6 @@
 #pragma once
 
-#include "dllDefine.h"
+#include "define.h"
 
 #include <string>
 #include <functional>

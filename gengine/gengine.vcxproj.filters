@@ -18,7 +18,7 @@
     <ClInclude Include="include\engine\app\Application.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\dllDefine.h">
+    <ClInclude Include="include\define.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\ge.h">
@@ -42,12 +42,21 @@
     <ClInclude Include="include\engine\events\MouseEvent.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="include\engine\windows\Window.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\platform\windows\Windows.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\engine\app\Application.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\engine\log\Log.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\platform\windows\Windows.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

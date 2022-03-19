@@ -14,7 +14,7 @@ extern ge::Application* ge::CreateApplication();
 int main(int argc, char** argv)
 {
 	ge::Log::init();
-	GE_WARN("GE Initialzied!");
+	GE_WARN("Log Initialzied!");
 
 	auto app = ge::CreateApplication();
 	app->Run();
