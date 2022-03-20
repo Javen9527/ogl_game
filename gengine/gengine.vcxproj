@@ -11,6 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\engine\imgui\ImguiLayer.h" />
     <ClInclude Include="include\engine\events\AppEvent.h" />
     <ClInclude Include="include\engine\events\Event.h" />
     <ClInclude Include="include\engine\events\KeyEvent.h" />
@@ -21,18 +22,33 @@
     <ClInclude Include="include\engine\app\EntryPoint.h" />
     <ClInclude Include="include\engine\windows\Window.h" />
     <ClInclude Include="include\ge.h" />
+    <ClInclude Include="include\platform\opengl\imguiOpenglRenderer.h" />
+    <ClInclude Include="include\platform\opengl\imguiOpenglRenderer_loader.h" />
     <ClInclude Include="include\platform\windows\Windows.h" />
     <ClInclude Include="include\engine\layer\Layer.h" />
     <ClInclude Include="include\engine\layer\LayerStack.h" />
     <ClInclude Include="module\glad\include\glad\glad.h" />
     <ClInclude Include="module\glad\include\KHR\khrplatform.h" />
+    <ClInclude Include="module\imgui\imconfig.h" />
+    <ClInclude Include="module\imgui\imgui.h" />
+    <ClInclude Include="module\imgui\imgui_internal.h" />
+    <ClInclude Include="module\imgui\imstb_rectpack.h" />
+    <ClInclude Include="module\imgui\imstb_textedit.h" />
+    <ClInclude Include="module\imgui\imstb_truetype.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="module\imgui\imgui.cpp" />
+    <ClCompile Include="module\imgui\imgui_demo.cpp" />
+    <ClCompile Include="module\imgui\imgui_draw.cpp" />
+    <ClCompile Include="module\imgui\imgui_tables.cpp" />
+    <ClCompile Include="module\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="src\engine\imgui\ImguiLayer.cpp" />
     <ClCompile Include="module\glad\src\glad.c" />
     <ClCompile Include="src\engine\layer\LayerStack.cpp" />
     <ClCompile Include="src\engine\layer\Layer.cpp" />
     <ClCompile Include="src\engine\log\Log.cpp" />
     <ClCompile Include="src\engine\app\Application.cpp" />
+    <ClCompile Include="src\platform\opengl\imguiOpenglRenderer.cpp" />
     <ClCompile Include="src\platform\windows\Windows.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -89,7 +105,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>GE_ENABLE_ASSERTS;GE_PLATFORM_WINDOWS;GE_BUILD_DLL;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);GE_PLATFORM_WINDOWS;GE_PLATFORM_WINDOWS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)gengine\module\glfw\include;$(SolutionDir)gengine\include;$(SolutionDir)gengine\module\spdlog\include;$(SolutionDir)gengine\module\glad\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)gengine\module\glfw\include;$(SolutionDir)gengine\include;$(SolutionDir)gengine\module\spdlog\include;$(SolutionDir)gengine\module\glad\include;$(SolutionDir)gengine\module\imgui</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -104,7 +120,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>GE_ENABLE_ASSERTS;GE_PLATFORM_WINDOWS;GE_BUILD_DLL;NDEBUG;_CONSOLE;%(PreprocessorDefinitions);GE_PLATFORM_WINDOWS;GE_PLATFORM_WINDOWS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)gengine\module\glfw\include;$(SolutionDir)gengine\include;$(SolutionDir)gengine\module\spdlog\include;$(SolutionDir)gengine\module\glad\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)gengine\module\glfw\include;$(SolutionDir)gengine\include;$(SolutionDir)gengine\module\spdlog\include;$(SolutionDir)gengine\module\glad\include;$(SolutionDir)gengine\module\imgui</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

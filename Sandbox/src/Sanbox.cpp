@@ -30,6 +30,7 @@ public:
 	Sandbox()
 	{
 		PushLayer(new ExampleLayer());
+		PushOverLayer(new ge::ImguiLayer());
 	}
 
 	~Sandbox()

@@ -25,6 +25,9 @@ public:
 	void PushLayer(Layer* layer);
 	void PushOverLayer(Layer* layer);
 
+	inline static Application& Get() { return *m_instance; }
+	inline Window& GetWindow() { return *m_window; }
+
 private:
 	bool OnWindowClose(WindowCloseEvent& event);
 
@@ -32,6 +35,8 @@ private:
 	std::unique_ptr<Window> m_window;
 	LayerStack m_layerStack;
 	bool m_running = true;
+
+	static Application* m_instance;
 };
 
 // need to be implement by client

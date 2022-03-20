@@ -6,3 +6,8 @@ tmp/
 
 # Files
 *.user
+
+
+# tmp
+# this should be removed after my git submodule add working
+gengine/module/imgui/

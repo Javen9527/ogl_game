@@ -5,8 +5,13 @@
 
 namespace ge
 {
+	Application* Application::m_instance = nullptr;
+
 	Application::Application()
 	{
+		GE_ASSERT(!m_instance, "Application is already existed!");
+		m_instance = this;
+
 		m_window = std::unique_ptr<Window>(Window::Create());
 		m_window->SetEventCallback(std::bind(&Application::OnEvent, this, std::placeholders::_1));
 	}
@@ -56,11 +61,13 @@ namespace ge
 	void Application::PushLayer(Layer* layer)
 	{
 		m_layerStack.PushLayer(layer);
+		layer->OnAttach();
 	}
 
 	void Application::PushOverLayer(Layer* layer)
 	{
 		m_layerStack.PushOverLayer(layer);
+		layer->OnAttach();
 	}
 
 	bool Application::OnWindowClose(WindowCloseEvent& event)
