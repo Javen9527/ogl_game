@@ -81,5 +81,15 @@ opengl for a game.
         - 使用premake之类的工具
         - 使用库本身的cmake创建出该库本身的sln，再拷贝其中的projct项目文件，添加到自己项目中，修改头文件输出文件等，再添加引用即可。
 
+        - tips: 一个桌面应用程序通过：main -> app -> window 的架构进行设计
+
+12. Window event
+    - 调用路线：
+        * 通过application类中设定OnEvent
+        * 在windows中维护一个windowdata成员，设定其中的callback为OnEvent
+        * 在windows中设定glfw window的user指针指向windowData
+        * 设定glfw中window的callback
+
+
 
 
