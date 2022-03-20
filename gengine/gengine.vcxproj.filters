@@ -54,6 +54,12 @@
     <ClInclude Include="include\engine\layer\LayerStack.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="module\glad\include\glad\glad.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="module\glad\include\KHR\khrplatform.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\engine\app\Application.cpp">
@@ -69,6 +75,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\engine\layer\LayerStack.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="module\glad\src\glad.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

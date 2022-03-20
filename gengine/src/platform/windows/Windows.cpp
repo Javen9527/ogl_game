@@ -50,6 +50,13 @@ namespace ge
 
 		m_window = glfwCreateWindow((int)props.Width, (int)props.Height, m_Data.Title.c_str(), nullptr, nullptr);
 		glfwMakeContextCurrent(m_window);
+
+		// glad
+		int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
+		GE_ASSERT(status, "Failed to initialized glad!");
+		if(status)
+			GE_INFO("Initialized glad Successfully!");
+
 		glfwSetWindowUserPointer(m_window, &m_Data); // for windows callback function
 		SetVSync(true);
 

@@ -2,6 +2,7 @@
 
 #include "engine/windows/Window.h"
 
+#include "glad/glad.h" // keep this order before glfw
 #include "GLFW/glfw3.h"
 
 namespace ge

@@ -24,8 +24,11 @@
     <ClInclude Include="include\platform\windows\Windows.h" />
     <ClInclude Include="include\engine\layer\Layer.h" />
     <ClInclude Include="include\engine\layer\LayerStack.h" />
+    <ClInclude Include="module\glad\include\glad\glad.h" />
+    <ClInclude Include="module\glad\include\KHR\khrplatform.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="module\glad\src\glad.c" />
     <ClCompile Include="src\engine\layer\LayerStack.cpp" />
     <ClCompile Include="src\engine\layer\Layer.cpp" />
     <ClCompile Include="src\engine\log\Log.cpp" />
@@ -86,7 +89,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>GE_ENABLE_ASSERTS;GE_PLATFORM_WINDOWS;GE_BUILD_DLL;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);GE_PLATFORM_WINDOWS;GE_PLATFORM_WINDOWS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)gengine\module\glfw\include;$(SolutionDir)gengine\include;$(SolutionDir)gengine\module\spdlog\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)gengine\module\glfw\include;$(SolutionDir)gengine\include;$(SolutionDir)gengine\module\spdlog\include;$(SolutionDir)gengine\module\glad\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -101,7 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>GE_ENABLE_ASSERTS;GE_PLATFORM_WINDOWS;GE_BUILD_DLL;NDEBUG;_CONSOLE;%(PreprocessorDefinitions);GE_PLATFORM_WINDOWS;GE_PLATFORM_WINDOWS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)gengine\module\glfw\include;$(SolutionDir)gengine\include;$(SolutionDir)gengine\module\spdlog\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)gengine\module\glfw\include;$(SolutionDir)gengine\include;$(SolutionDir)gengine\module\spdlog\include;$(SolutionDir)gengine\module\glad\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
