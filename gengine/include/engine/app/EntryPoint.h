@@ -1,5 +1,11 @@
 #pragma once
 
+
+/*
+Entry point must be handled by engine!
+The logic line are: entryPoint -> app -> window
+*/
+
 #include <cstdio>
 
 #include "Application.h"

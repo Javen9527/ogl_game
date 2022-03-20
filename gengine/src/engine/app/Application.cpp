@@ -18,15 +18,16 @@ namespace ge
 
 	Application::~Application()
 	{
-
 	}
 
 	void Application::Run()
 	{
 		while (m_running)
 		{
+			// main window
 			m_window->OnUpdate();
 
+			// layers
 			for (auto layer : m_layerStack)
 			{
 				layer->OnUpdate();
@@ -36,6 +37,7 @@ namespace ge
 
 	void Application::OnEvent(Event& e)
 	{
+		// 1. main window
 		// log event
 		GE_TRACE("{0}", e);
 
@@ -48,6 +50,7 @@ namespace ge
 		});*/
 		dispatcher.Dispatch<WindowCloseEvent>(std::bind(&Application::OnWindowClose, this, std::placeholders::_1));
 
+		// 2. back layer
 		// event for layer
 		for (auto it = m_layerStack.end(); it != m_layerStack.begin();)
 		{

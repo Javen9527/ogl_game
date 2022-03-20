@@ -1,5 +1,5 @@
 
-#include "engine/windows/glfwWindow/Windows.h"
+#include "Windows.h"
 #include "engine/log/Log.h"
 
 #include "engine/events/KeyEvent.h"

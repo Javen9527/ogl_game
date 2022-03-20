@@ -14,10 +14,8 @@ namespace ge
 		Windows(const WindowProps& props);
 		virtual ~Windows();
 
+	public:
 		void OnUpdate() override;
-		
-		inline unsigned int GetWidth() const override { return m_Data.Width; }
-		inline unsigned int GetHeight() const override { return m_Data.Height; }
 
 		inline void SetEventCallback(const EventCallbackFunc& callback) override
 		{
@@ -26,6 +24,9 @@ namespace ge
 
 		void SetVSync(bool enabled) override;
 		bool IsVSync() const override;
+		
+		inline unsigned int GetWidth() const override { return m_Data.Width; }
+		inline unsigned int GetHeight() const override { return m_Data.Height; }
 
 	private:
 		virtual void Init(const WindowProps& props);
@@ -39,12 +40,13 @@ namespace ge
 			unsigned int Height;
 
 			bool VSync;
+			// using EventCallbackFunc = std::function<void(Event&)>;
 			EventCallbackFunc EventCallback;
 		};
 
 	private:
-		GLFWwindow* m_window;
 		WindowData m_Data;
+		GLFWwindow* m_window;
 	};
 } // namespace ge
 

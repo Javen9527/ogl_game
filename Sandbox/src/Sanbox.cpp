@@ -29,7 +29,7 @@ class Sandbox : public ge::Application
 public:
 	Sandbox()
 	{
-		PushLayer(new ExampleLayer());
+		//PushLayer(new ExampleLayer());
 		PushOverLayer(new ge::ImguiLayer());
 	}
 

@@ -45,7 +45,7 @@
     <ClInclude Include="include\engine\windows\Window.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\engine\windows\glfwWindow\Windows.h">
+    <ClInclude Include="src\engine\windows\glfwWindow\Windows.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\engine\layer\Layer.h">

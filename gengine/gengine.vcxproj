@@ -24,7 +24,7 @@
     <ClInclude Include="include\ge.h" />
     <ClInclude Include="include\engine\renderer\imgui\imguiOpenglRenderer.h" />
     <ClInclude Include="include\engine\renderer\imgui\imguiOpenglRenderer_loader.h" />
-    <ClInclude Include="include\engine\windows\glfwWindow\Windows.h" />
+    <ClInclude Include="src\engine\windows\glfwWindow\Windows.h" />
     <ClInclude Include="include\engine\layer\Layer.h" />
     <ClInclude Include="include\engine\layer\LayerStack.h" />
     <ClInclude Include="module\glad\include\glad\glad.h" />
