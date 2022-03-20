@@ -4,6 +4,7 @@
 
 #include <string>
 #include <functional>
+#include <iostream>
 
 namespace ge
 {
@@ -61,6 +62,8 @@ namespace ge
 		{
 			return GetCategoryFlags() & category;
 		}
+
+		inline bool GetHandled()const { return m_handled; }
 
 	private:
 		friend class EventDispatcher;

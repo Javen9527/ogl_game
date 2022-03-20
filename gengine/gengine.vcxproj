@@ -22,8 +22,12 @@
     <ClInclude Include="include\engine\windows\Window.h" />
     <ClInclude Include="include\ge.h" />
     <ClInclude Include="include\platform\windows\Windows.h" />
+    <ClInclude Include="include\engine\layer\Layer.h" />
+    <ClInclude Include="include\engine\layer\LayerStack.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\engine\layer\LayerStack.cpp" />
+    <ClCompile Include="src\engine\layer\Layer.cpp" />
     <ClCompile Include="src\engine\log\Log.cpp" />
     <ClCompile Include="src\engine\app\Application.cpp" />
     <ClCompile Include="src\platform\windows\Windows.cpp" />
