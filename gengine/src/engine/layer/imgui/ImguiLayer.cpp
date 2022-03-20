@@ -1,9 +1,9 @@
-#include "engine/imgui/ImguiLayer.h"
+#include "engine/layer/imgui/ImguiLayer.h"
 #include "engine/app/Application.h"
 
 #include "GLFW/glfw3.h"
 
-#include "platform/opengl/imguiOpenglRenderer.h"
+#include "engine/renderer/imgui/imguiOpenglRenderer.h"
 
 
 namespace ge

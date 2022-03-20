@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\engine\imgui\ImguiLayer.h" />
+    <ClInclude Include="include\engine\layer\imgui\ImguiLayer.h" />
     <ClInclude Include="include\engine\events\AppEvent.h" />
     <ClInclude Include="include\engine\events\Event.h" />
     <ClInclude Include="include\engine\events\KeyEvent.h" />
@@ -22,9 +22,9 @@
     <ClInclude Include="include\engine\app\EntryPoint.h" />
     <ClInclude Include="include\engine\windows\Window.h" />
     <ClInclude Include="include\ge.h" />
-    <ClInclude Include="include\platform\opengl\imguiOpenglRenderer.h" />
-    <ClInclude Include="include\platform\opengl\imguiOpenglRenderer_loader.h" />
-    <ClInclude Include="include\platform\windows\Windows.h" />
+    <ClInclude Include="include\engine\renderer\imgui\imguiOpenglRenderer.h" />
+    <ClInclude Include="include\engine\renderer\imgui\imguiOpenglRenderer_loader.h" />
+    <ClInclude Include="include\engine\windows\glfwWindow\Windows.h" />
     <ClInclude Include="include\engine\layer\Layer.h" />
     <ClInclude Include="include\engine\layer\LayerStack.h" />
     <ClInclude Include="module\glad\include\glad\glad.h" />
@@ -42,14 +42,14 @@
     <ClCompile Include="module\imgui\imgui_draw.cpp" />
     <ClCompile Include="module\imgui\imgui_tables.cpp" />
     <ClCompile Include="module\imgui\imgui_widgets.cpp" />
-    <ClCompile Include="src\engine\imgui\ImguiLayer.cpp" />
+    <ClCompile Include="src\engine\layer\imgui\ImguiLayer.cpp" />
     <ClCompile Include="module\glad\src\glad.c" />
     <ClCompile Include="src\engine\layer\LayerStack.cpp" />
     <ClCompile Include="src\engine\layer\Layer.cpp" />
     <ClCompile Include="src\engine\log\Log.cpp" />
     <ClCompile Include="src\engine\app\Application.cpp" />
-    <ClCompile Include="src\platform\opengl\imguiOpenglRenderer.cpp" />
-    <ClCompile Include="src\platform\windows\Windows.cpp" />
+    <ClCompile Include="src\engine\renderer\imgui\imguiOpenglRenderer.cpp" />
+    <ClCompile Include="src\engine\windows\glfwWindow\Windows.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="module\glfw\glfw.vcxproj">

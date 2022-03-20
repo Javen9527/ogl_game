@@ -45,7 +45,7 @@
     <ClInclude Include="include\engine\windows\Window.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\platform\windows\Windows.h">
+    <ClInclude Include="include\engine\windows\glfwWindow\Windows.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\engine\layer\Layer.h">
@@ -60,7 +60,7 @@
     <ClInclude Include="module\glad\include\KHR\khrplatform.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\engine\imgui\ImguiLayer.h">
+    <ClInclude Include="include\engine\layer\imgui\ImguiLayer.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="module\imgui\imconfig.h">
@@ -81,10 +81,10 @@
     <ClInclude Include="module\imgui\imstb_truetype.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\platform\opengl\imguiOpenglRenderer.h">
+    <ClInclude Include="include\engine\renderer\imgui\imguiOpenglRenderer.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\platform\opengl\imguiOpenglRenderer_loader.h">
+    <ClInclude Include="include\engine\renderer\imgui\imguiOpenglRenderer_loader.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -95,7 +95,7 @@
     <ClCompile Include="src\engine\log\Log.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\platform\windows\Windows.cpp">
+    <ClCompile Include="src\engine\windows\glfwWindow\Windows.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\engine\layer\Layer.cpp">
@@ -107,7 +107,7 @@
     <ClCompile Include="module\glad\src\glad.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\engine\imgui\ImguiLayer.cpp">
+    <ClCompile Include="src\engine\layer\imgui\ImguiLayer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="module\imgui\imgui.cpp">
@@ -125,7 +125,7 @@
     <ClCompile Include="module\imgui\imgui_widgets.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\platform\opengl\imguiOpenglRenderer.cpp">
+    <ClCompile Include="src\engine\renderer\imgui\imguiOpenglRenderer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
