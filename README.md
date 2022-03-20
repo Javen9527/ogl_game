@@ -89,7 +89,9 @@ opengl for a game.
         * 在windows中维护一个windowdata成员，设定其中的callback为OnEvent
         * 在windows中设定glfw window的user指针指向windowData
         * 设定glfw中window的callback
+        
 
+13. layer
 
 
 
