@@ -4,3 +4,6 @@
 [submodule ".\\gengine\\module\\glfw"]
 	path = .\\gengine\\module\\glfw
 	url = https://github.com/glfw/glfw
+[submodule "gengine/module/imgui"]
+	path = gengine/module/imgui
+	url = https://github.com/Javen9527/imgui
